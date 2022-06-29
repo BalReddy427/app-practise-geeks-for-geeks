@@ -3,13 +3,14 @@ package test.string_permutations;
 public class TestStringPermutations {
 
 	public static void main(String[] args) {
-		String str1 = "abcd";
-		permute(str1,0);
+		String str1 = "abc";
+		permute(str1, 0);
 	}
 
 	private static void permute(String s, int i) 
 	{
-		if(i==s.length()-1)
+	
+		if(i == s.length()-1)
 		{
 			System.out.println(s);
 			return;
